@@ -16,8 +16,8 @@ buttons.forEach(function(button){
             const play = playRround(computerChoice,humanChoice);
             round.innerText = `Round :${count}`;
             count++;
-            p1.innerText = humanChoice;
-            p2.innerText = computerChoice;
+            p1.innerText = `HUMAN CHOICE : ${humanChoice}`;
+            p2.innerText = `COMPUTER CHOICE: ${computerChoice}`;
             p3.innerText = play;
             document.querySelector("#humanScore").textContent = humanScore;
             document.querySelector("#computerScore").textContent = computerScore;
