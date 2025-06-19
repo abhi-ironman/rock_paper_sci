@@ -5,15 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock paper scissor</title>
     <script src="java.js" defer></script>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .container{
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .btns{
+            display: flex;
+            gap: 10px;
+        }
+
+        .scores{
+            margin-top:30px;
+        }
+
+        .choices{
+            margin-top:30px;
+        }
+    </style>
 </head>
 <body>
-        <button id="btn1">rock</button> 
-        <button id="btn2">paper</button>
-        <button id="btn3">scissors</button>
-        <div class="scores">
-            <p>HUMAN SCORE: <a id="human">0</a></p>
-            <p>COMPUTER SCORE: <a id="computer">0</a></p>
-            <p id="winner"></p>
-        </div>
+      <div class="container">
+            <h2 id="text">Buttons</h2>
+            <div class="btns">
+                <button>rock</button>
+                <button>paper</button>
+                <button>scissors</button>
+            </div>
+      </div>
+      <div class="scores">
+        <p>----SCORE BOARD----</p>
+        <p>HUMAN SCORE : <a id="humanScore">0</a></p>
+        <p>COMPUTER SCORE : <a id="computerScore">0</a></p>
+      </div>
+      <div class="choices">
+        
+      </div>
+  
+
 </body>
 </html>
